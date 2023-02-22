@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <!-- added extra div -->
+          <div class="navbar">
+            <div class="logo">
+              <h3 class="h3">
+                <a href="#">har<span class="big-size">bike</span></a>
+              </h3>
+            </div>
+
+            <div class="nav-links collapse-nav" id="myCollapse-nav">
+              <!-- new -->
+              <ul class="list">
+                <li><a href="#"> Blog</a></li>
+                <li><a href="#"> Contact</a></li>
+                <li><a href="#"> Works</a></li>
+              </ul>
+
+              <!-- added -->
+              <button class="btn-nav">
+                <span> <i class="fa fa-bars"></i></span>
+              </button>
+              <!-- finished -->
+            </div>
+          </div>
+          <div class="div-toggle">
+            <ul class="div-toggle-ul">
+              <li><a href="#"> Blog</a></li>
+              <li><a href="#"> Contact</a></li>
+              <li><a href="#"> Works</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section>
+        <div class="profile flex">
+          <div class="profile-info">
+            <h2>Hi, I am Abike <br />Software Engineer</h2>
+            <p>
+              A proactive and dynamic software developer with current standards
+              of coding, excellent communication skills to lead and support a
+              team. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam itaque quae ipsum, laborum natus officiis unde odio.
+            </p>
+            <a
+              href="https://pdfhost.io/v/nAw6k5M5F_Resume"
+              target="_blank"
+              download="resume.pdf"
+            >
+              <input type="button" name="resume" value="Download Resume"
+            /></a>
+          </div>
+          <div class="profile-img">
+            <img
+              src="https://res.cloudinary.com/harbike/image/upload/v1615585151/Snapchat-172334459_uusew3.jpg"
+              alt="User's picture"
+            />
+          </div>
+        </div>
+      </section>
+
+      <article>
+        <div class="post-menu">
+          <div class="recent-section flex">
+            <p>Recent posts</p>
+            <p class="view-link"><a href="#"> View all</a></p>
+          </div>
+
+          <div class="posts row">
+            <!--new -->
+            <div class="post col-lg-4">
+              <h3>Making a design system from scratch</h3>
+              <p class="info-tag">30 Jan 2023 | Design Pattern</p>
+              <p>
+                Design patterns differ by their complexity, level of detail and
+                scale of applicability. In addition, they can be categorized by
+                their intent and divided into three groups.
+              </p>
+            </div>
+            <div class="post col-lg-4">
+              <h3>Creating perfect Icons</h3>
+              <p class="info-tag">30 Jan 2023 | Icon Design</p>
+              <p>
+                Drawing an icon that delights the eye is not enough. Making the
+                icon scalable, responsive, and suitable for many devices is
+                what’s important if you want someone to buy/use your icons.
+              </p>
+            </div>
+            <div class="post col-lg-4">
+              <h3>Creating perfect Icons</h3>
+              <p class="info-tag">30 Jan 2023 | Icon Design</p>
+              <p>
+                It requires a lot of thinking and experience, and that is what
+                we’ve got. So tune in, and let us teach you how to create
+                pixel-perfect icons.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </body>
+
+  <script>
+    const btn = document.querySelector("button.btn-nav");
+    const menu = document.querySelector(".div-toggle");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("div-toggle");
+    });
+  </script>
+</html>
